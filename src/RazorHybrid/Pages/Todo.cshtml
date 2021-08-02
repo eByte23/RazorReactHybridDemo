@@ -1,0 +1,33 @@
+@page
+@model TodoModel
+@{
+    ViewData["Title"] = "Todo App Sample";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Todo App.</h1>
+    <h2>Here is some more content writen in razor</h2>
+</div>
+
+<div id="todo-app-mount">
+
+</div>
+
+
+
+@section scripts{
+
+
+    <script type="text/javascript">
+        
+        // This is a javascript const we are going to serialize into from c#
+        // this is the props we want to pass to our react component
+        // **Note: we don't have to worry about escaping etc the Json lib does it for us
+        const props = @Json.Serialize(new{
+            todoItems = Model.TodoItems,
+            users= Model.Users
+        })
+        ra.render("TodoApp", document.getElementById("todo-app-mount"), props);
+    
+    </script>
+}

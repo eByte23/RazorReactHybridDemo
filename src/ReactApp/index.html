@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="/ra.lib.js"></script>
+  </head>
+  <body>
+    <button onclick="run()">Test</button>
+    <div id="todo-app-mount"></div>
+
+    <script type="text/javascript">
+      function run() {
+        const props = {
+          todoItems: [{
+              id:"e0222c2b-5b87-4852-931f-c65aa814d533",
+              title:"Js Sample app index todo",
+              completed:false,
+              assignedUserId: "8c7973b8-3b64-4731-9297-37e1cd2301f2"
+          }],
+          users: [{
+            id:"8c7973b8-3b64-4731-9297-37e1cd2301f2",
+            name:"Bob Smackhard"
+          }],
+        };
+        ra.render("TodoApp", document.getElementById("todo-app-mount"), props);
+      }
+    </script>
+  </body>
+</html>
