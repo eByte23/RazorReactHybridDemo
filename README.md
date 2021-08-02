@@ -40,7 +40,7 @@ And of course you'll need .NET Core. which you can find [here](https://dot.net)
 
 ### Run the app
 
-The app runs in to parts, a nodejs app running with webpack running a webserver locally then with build a minified js 
+The app runs in two parts, a nodejs app running with webpack running a webserver locally then with build a minified js 
 library to be included in the .net app on deploy and the .NET core app with Razor Pages/MVC
 
 You can run either individually however to using the react library you'll need to run the node app.
