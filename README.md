@@ -35,6 +35,9 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
 nvm install node
 ```
 
+Windows have a look here
+https://github.com/coreybutler/nvm-windows
+
 And of course you'll need .NET Core. which you can find [here](https://dot.net)
 
 
